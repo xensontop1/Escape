@@ -1,0 +1,232 @@
+<!--No need to skid, go to my github for the repo :) github.com/sye0001 -->
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="styles.css" rel="stylesheet">
+      <link rel="icon" type="image/x-icon" href="pfp.png">
+      <title>Escape</title>
+      <style>
+   
+        #overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #fff;
+            font-size: 24px;
+            z-index: 9999;
+            cursor: pointer;
+        }
+
+        #overlay.hidden {
+            display: none;
+        }
+    </style>
+  </head>
+        <!-- BACKGROUND IMAGE -->
+  <body style="background-image: url('ez2.gif'); background-repeat: no-repeat; background-position: center; background-size: cover;">
+    <div id="overlay">
+      Click to Escape
+      </div>  
+      <main>
+          <div class="container">
+              <div class="audio-bg">
+
+                  <audio id="myAudio" loop muted>
+                    <!-- ADD UR MUSIC HERE -->
+                      <source src="" type="audio/mpeg">
+                      Your browser does not support the audio element.
+                  </audio>
+              </div>
+              <div class="profile-container">
+                  <div class="card">
+                      <div class="pfp">
+                          <img src="pfp.png">
+                      </div>
+                      <div class="username">
+                            <!-- USERNAME -->
+                          <a>Escape Room</a>
+                      </div>
+                      <div class="status">
+                          <a id="typewriter" class="typewriter"></a>
+                        </div>
+                        <div class="badges-container">
+                        <div class="badges">
+
+
+                          
+                          <!--EARLY SUPPORTER BADGE-->
+                          <div class="tooltip" data-text="Escape by team B">
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+                            <g>
+                              <path fill="#ffffff" d="M62.242,53.757L51.578,43.093C54.373,38.736,56,33.56,56,28C56,12.536,43.464,0,28,0S0,12.536,0,28
+                                s12.536,28,28,28c5.56,0,10.736-1.627,15.093-4.422l10.664,10.664c2.344,2.344,6.142,2.344,8.485,0S64.586,56.101,62.242,53.757z
+                                 M28,54C13.641,54,2,42.359,2,28S13.641,2,28,2s26,11.641,26,26S42.359,54,28,54z M60.828,60.828c-1.562,1.562-4.095,1.562-5.656,0
+                                L44.769,50.425c2.145-1.606,4.051-3.513,5.657-5.656l10.402,10.402C62.391,56.732,62.391,59.266,60.828,60.828z"/>
+                              <path fill="#ffffff" d="M28,4C14.745,4,4,14.745,4,28s10.745,24,24,24s24-10.745,24-24S41.255,4,28,4z M28,50
+                                C15.85,50,6,40.15,6,28S15.85,6,28,6s22,9.85,22,22S40.15,50,28,50z"/>
+                              <path fill="#ffffff" d="M28,11c-0.553,0-1,0.447-1,1s0.447,1,1,1c8.284,0,15,6.716,15,15c0,0.553,0.447,1,1,1s1-0.447,1-1
+                                C45,18.611,37.389,11,28,11z"/>
+                            </g>
+                            </svg>
+                          </div>
+
+                          <!--NITRO BADGE-->
+
+                      </div>
+                      
+                  </div>
+                  <a id="audio-control">
+                    <!--<svg fill='#d8d8d8' width="18px" height="18px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="m2 7.5v3c0 .8.6 1.5 1.4 1.5h2.3l3.2 2.8c.1.1.3.2.4.2s.2 0 .3-.1c.2-.1.4-.4.4-.7v-.9l-7.2-7.2c-.5.2-.8.8-.8 1.4zm8 2v-5.8c0-.3-.1-.5-.4-.7-.1 0-.2 0-.3 0s-.3 0-.4.2l-2.8 2.5-4.1-4.1-1 1 3.4 3.4 5.6 5.6 3.6 3.6 1-1z" fill-rule="evenodd"/></svg> -->
+                </a>
+                  <div class="links-container">
+                      <div class="links">
+                          <div class="link" id="connection">
+                              <p>Jayden</p>
+                              <div class="link-content">
+                                  <h4>Room 1</h4>
+                                  <a href="" target="_blank">
+                                    <div class="tooltip" data-text="Enter.">
+                                    <svg width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                                    <path stroke="#d8d8d8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.3212 10.6852L4 19L6 21M7 16L9 18M20 7.5C20 9.98528 17.9853 12 15.5 12C13.0147 12 11 9.98528 11 7.5C11 5.01472 13.0147 3 15.5 3C17.9853 3 20 5.01472 20 7.5Z"/>
+                                  </svg>
+                                    </div>
+                                </a>
+                              </div>
+                            </div>
+                            
+                          
+                          <div class="link" id="connection">
+                            <p>James</p>
+                            <div class="link-content">
+                                <h4>Room 2</h4>
+                                <a href="" target="_blank">
+                                  <div class="tooltip" data-text="Enter.">
+                                  <svg width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                                  <path stroke="#d8d8d8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.3212 10.6852L4 19L6 21M7 16L9 18M20 7.5C20 9.98528 17.9853 12 15.5 12C13.0147 12 11 9.98528 11 7.5C11 5.01472 13.0147 3 15.5 3C17.9853 3 20 5.01472 20 7.5Z"/>
+                                </svg>
+                                  </div>
+                              </a>
+                            </div>
+                        </div>
+                        
+
+                          <div class="link" id="connection">
+                              <p>Jack</p>
+                              <div class="link-content">
+                                  <h4>Room 3</h4>
+                                  <a href="" target="_blank">
+                                      <div class="tooltip" data-text="Enter.">
+                                      <svg width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                                      <path stroke="#d8d8d8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.3212 10.6852L4 19L6 21M7 16L9 18M20 7.5C20 9.98528 17.9853 12 15.5 12C13.0147 12 11 9.98528 11 7.5C11 5.01472 13.0147 3 15.5 3C17.9853 3 20 5.01472 20 7.5Z"/>
+                                    </svg>
+                                      </div>
+                                  </a>
+                              </div>
+                          </div>
+                          <div class="link" id="connection">
+                            <p>Jospeh</p>
+                            <div class="link-content">
+                                <h4>Room 4</h4>
+                                <a href="" target="_blank">
+                                  <div class="tooltip" data-text="Enter.">
+                                  <svg width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                                  <path stroke="#d8d8d8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.3212 10.6852L4 19L6 21M7 16L9 18M20 7.5C20 9.98528 17.9853 12 15.5 12C13.0147 12 11 9.98528 11 7.5C11 5.01472 13.0147 3 15.5 3C17.9853 3 20 5.01472 20 7.5Z"/>
+                                </svg>
+                                  </div>
+                              </a>
+                            </div>
+                        </div>
+                        <div class="link" id="connection">
+                          <p>Blessing</p>
+                          <div class="link-content">
+                              <h4>Room 5</h4>
+                              <a href="" target="_blank">
+                                <div class="tooltip" data-text="Enter.">
+                                <svg width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" fill="none">
+                                <path stroke="#d8d8d8" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.3212 10.6852L4 19L6 21M7 16L9 18M20 7.5C20 9.98528 17.9853 12 15.5 12C13.0147 12 11 9.98528 11 7.5C11 5.01472 13.0147 3 15.5 3C17.9853 3 20 5.01472 20 7.5Z"/>
+                              </svg>
+                                </div>
+                            </a>
+                          </div>
+                      </div>
+
+
+                          
+                          </div>
+                      </div>
+                  </div>
+              </div>            
+      </main>
+      <script>
+        // audio control
+        const audio = document.getElementById("myAudio");
+        const audioControl = document.getElementById("audio-control");
+
+        audioControl.addEventListener("click", () => {
+            if (audio.paused) {
+                audio.muted = false;
+                audio.play();
+                audioControl.innerHTML = `<svg fill='#d8d8d8' width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg"><path clip-rule="evenodd" d="m2 7.5v3c0 .8.6 1.5 1.4 1.5h2.3l3.2 2.8c.1.1.3.2.4.2s.2 0 .3-.1c.2-.1.4-.4.4-.7v-.9l-7.2-7.2c-.5.2-.8.8-.8 1.4zm8 2v-5.8c0-.3-.1-.5-.4-.7-.1 0-.2 0-.3 0s-.3 0-.4.2l-2.8 2.5-4.1-4.1-1 1 3.4 3.4 5.6 5.6 3.6 3.6 1-1z" fill-rule="evenodd"/></svg>`;
+            } else {
+                audio.muted = true;
+                audio.pause();
+                audioControl.innerHTML = `<svg width="18px" height="18px" viewBox="-1 0 12 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><defs></defs><g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd"><g id="Dribbble-Light-Preview" transform="translate(-65.000000, -3803.000000)" fill="#d8d8d8"><g id="icons" transform="translate(56.000000, 160.000000)"><path d="M18.074,3650.7335 L12.308,3654.6315 C10.903,3655.5815 9,3654.5835 9,3652.8985 L9,3645.1015 C9,3643.4155 10.903,3642.4185 12.308,3643.3685 L18.074,3647.2665 C19.306,3648.0995 19.306,3649.9005 18.074,3650.7335" id="play-[#1000]"></path></g></g></g></svg>`;
+            }
+        });
+
+        // overlay control
+        const overlay = document.getElementById("overlay");
+
+        overlay.addEventListener("click", () => {
+            overlay.classList.add("hidden");
+            audio.muted = false;
+            audio.play();
+        });
+    </script>
+
+  <script>
+    //typewritter text
+      var txt = 'Try and escape as fast as you can...   good luck.'; // edit ur about me here
+      var speed = 200; 
+      var eraseSpeed = 80;
+      var loopCount = 0;
+      var maxLoop = 0; 
+      var forward = true; 
+      
+      function typeWriter() {
+        var typewriter = document.getElementById("typewriter");
+        var textLength = txt.length;
+        
+        if (forward) {
+          if (typewriter.innerHTML.length < textLength) {
+            typewriter.innerHTML += txt.charAt(typewriter.innerHTML.length);
+            setTimeout(typeWriter, speed);
+          } else {
+            forward = false;
+            setTimeout(typeWriter, speed * 3); 
+          }
+        } else {
+          if (typewriter.innerHTML.length > 0) {
+            typewriter.innerHTML = typewriter.innerHTML.slice(0, -1);
+            setTimeout(typeWriter, eraseSpeed);
+          } else {
+            forward = true;
+            setTimeout(typeWriter, speed * 3); 
+          }
+        }
+      }
+      
+      window.onload = function() {
+        typeWriter();
+      };
+    </script>
+  </body>
+  </html>
